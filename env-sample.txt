@@ -1,0 +1,44 @@
+# postgres stuff
+PGPORT=5432
+PGHOST='localhost'
+PGUSERNAME='apitemplate'
+PGPASSWORD='apitemplate'
+PGDATABASE='apitemplate'
+
+# some applications may need this as a URI instead 
+PGURI=postgresql://${PGUSERNAME}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}
+
+# for seeding initial db/testing scripts
+USR1_EMAIL='mark@sample.com'
+USR2_EMAIL='mark+auth1@sample.com'
+
+# for creating account in runCurls
+INV_PASS='markTest1234'
+INV_EMAIL='mark+auth10@sample.com'
+INV_PHONE='+12035551212'
+
+# what port are we running NPM on?
+PORT=3001
+
+# Auth0 Host stuff - IF you are using AUTH0
+AUTH0_ISSUER_URL=https://AbCdE-1234.auth0.com/
+AUTH0_DOMAIN=dev-AbCdE-1234.auth0.com
+AUTH0_API_CLIENT_ID=AbCdE-1234
+AUTH0_API_CLIENT_SECRET=AbCdE-1234
+AUTH0_AUDIENCE=AbCdE-1234
+AUTH0_CLIENT_ID=AbCdE-1234
+AUTH0_CLIENT_SECRET=AbCdE-1234
+#AUTH0_APPSECRET=AbCdE-1234
+
+# FusionAuth Stuff - IF you are using FusionAuth
+FUSIONA_HOST="localhost:9011"
+FUSIONA_SERVER='http://localhost:9011/'
+FUSIONA_CLIENTID='AbCdE-1234'
+FUSIONA_CLIENTSECRET='AbCdE-1234'
+FUSIONA_ISSUER='acme.com'
+FUSIONA_APIKEY='AbCdE-1234'
+FUSIONA_TENANT='AbCdE-1234'
+SENDGRIDKEY=AbCdE-1234
+
+# JWT token to use for curl
+TOKEN=AbCdE-1234
